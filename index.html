@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mom's Boutique</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Georgia", serif;
+    }
+
+    body {
+      background-color: #fff8f0;
+      color: #3a1a1a;
+      line-height: 1.6;
+    }
+
+    /* Header / Hero */
+    .hero {
+      background-color: #6d1b1b;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 10%;
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    .hero-text p {
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+
+    .hero-text button {
+      background-color: #f5c278;
+      color: #3a1a1a;
+      padding: 12px 30px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .hero-text button:hover {
+      background-color: #d9a74f;
+    }
+
+    .hero img {
+      width: 300px;
+      border-radius: 10px;
+    }
+
+    /* Category Section */
+    .categories {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px 10%;
+    }
+
+    .category-card {
+      text-align: center;
+      background: #fff;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .category-card img {
+      width: 150px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .category-card p {
+      font-weight: bold;
+    }
+
+    /* Products */
+    .products {
+      padding: 40px 10%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 20px;
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .product-card h3 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .product-card p {
+      margin-bottom: 10px;
+      color: #6d1b1b;
+      font-weight: bold;
+    }
+
+    .product-card button {
+      background-color: #f5c278;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .product-card button:hover {
+      background-color: #d9a74f;
+    }
+
+    /* About Section */
+    .about {
+      padding: 60px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    .about-text h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #6d1b1b;
+    }
+
+    .about-text p {
+      font-size: 18px;
+    }
+
+    .about img {
+      flex: 1;
+      max-width: 300px;
+      border-radius: 10px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #6d1b1b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    /* Hover Zoom Effect for Category & Product Cards */
+.category-card:hover,
+.product-card:hover {
+  transform: scale(1.05); /* Zoom in slightly */
+  transition: transform 0.3s ease; /* Smooth animation */
+  cursor: pointer; /* Optional: show pointer */
+}
+
+
+    /* Responsive */
+    @media(max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-text {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+      .about {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Handmade with Love</h1>
+      <p>Custom Ladies Suits by Mom</p>
+      <button>Shop Now</button>
+    </div>
+    <img src="https://i.pinimg.com/736x/3c/0e/ee/3c0eee2211c2a943bdb16b7b63025758.jpg" alt="Hero Image">
+  </section>
+
+  <!-- Categories -->
+  <div class="categories">
+    <div class="category-card">
+      <img src="https://www.rajwadi.com/media/catalog/product/cache/d0a17a55162f689b08fd45d368ce8bcc/r/e/readymade-red-pant-style-salwar-kameez-with-dupatta-62270.jpg" alt="">
+      <p>Ready-Made Suits</p>
+    </div>
+    <div class="category-card">
+      <img src="https://www.koskii.com/cdn/shop/products/koskii-multi-stonework-semi-crepe-designer-salwar-suit-ssus0018309_multi_red_1.jpg?v=1649842988&width=1080" alt="">
+      <p>Unstitched Fabric</p>
+    </div>
+    <div class="category-card">
+      <img src="https://www.sareespalace.com/image/cache/data-2024/maroon-festival-readymade-salwar-kameez-304175-1000x1375.jpg" alt="">
+      <p>Custom Orders</p>
+    </div>
+  </div>
+
+  <!-- Products -->
+  <div class="products">
+    <div class="product-card">
+      <img src="https://odette.in/cdn/shop/products/women-s-maroon-net-semi-stitched-salwar-suit-odette-2_1080x.jpg?v=1663171901" alt="img">
+      <h3>Nuru Suits</h3>
+      <p>₹2300</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://mahadhya.com/cdn/shop/files/vanshikaajamwal-20240418-0008.jpg?v=1733484528&width=2048" alt="img">
+      <h3>Rosathe-geal</h3>
+      <p>₹2500</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://assets0.mirraw.com/images/13299017/image_long_webp.webp?1748954426" alt="img">
+      <h3>Dittholmis</h3>
+      <p>₹2500</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://assets0.mirraw.com/images/12797296/maroon_(2)_zoom_long_webp.webp?1725018515" alt="img">
+      <h3>Matriaand</h3>
+      <p>₹2300</p>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section class="about">
+    <div class="about-text">
+      <h2>About</h2>
+      <p>My mom has been stitching suits for 30+ years.  
+         Her work combines tradition & elegance.</p>
+    </div>
+    <img src="Screenshot 2025-10-01 at 4.17.34 PM.png">
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Contact us | © 2025 Mom's Boutique</p>
+  </footer>
+
+</body>
+</html>
