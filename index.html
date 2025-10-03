@@ -172,11 +172,47 @@
       padding: 20px;
     }
     /* Hover Zoom Effect for Category & Product Cards */
-.category-card:hover,
-.product-card:hover {
-  transform: scale(1.05); /* Zoom in slightly */
-  transition: transform 0.3s ease; /* Smooth animation */
-  cursor: pointer; /* Optional: show pointer */
+    .category-card:hover,
+    .product-card:hover {
+      transform: scale(1.05); /* Zoom in slightly */
+      transition: transform 0.3s ease; /* Smooth animation */
+      cursor: pointer; /* Optional: show pointer */
+    }
+    /* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #f5c278;
+  color: #3a1a1a;
+  font-size: xx-large;
+  font-weight: bolder;
+  padding-left: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+/* Make links horizontal by default */
+.nav-links li a {
+  text-decoration: none;
+  color: #3a1a1a;
+  font-weight: bold;
+  font-size: medium;
+}
+
+/* Hamburger icon hidden on big screens */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+.nav-links li a:hover{
+  color: black;
 }
 
 
@@ -200,12 +236,47 @@
       .about img{
         width: 100%;
       }
+      .menu-toggle {
+    display: block;
+  }
+  
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #444;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 15px;
+  }
+  
+  .nav-links.active {
+    display: flex;
+  }
     }
     
   </style>
 </head>
 <body>
+  <nav class="navbar">
+  <div class="logo">Mom's Boutique</div>
   
+  <!-- Hamburger Icon -->
+  <div class="menu-toggle" id="menu-toggle">
+    ☰
+  </div>
+  
+  <!-- Menu Items -->
+  <ul class="nav-links" id="nav-links">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#cart">My Cart</a></li>
+    <li><a href="#account">My Account</a></li>
+    <li><a href="#enquiry">Enquiry Form</a></li>
+  </ul>
+</nav>
+
   <!-- Hero -->
   <section class="hero">
     <div class="hero-text">
